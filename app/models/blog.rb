@@ -5,4 +5,7 @@ class Blog < ApplicationRecord
 
   # add validation
   validates_presence_of :title, :body
+
+  # add relationship (references)
+  belongs_to :topic
 end
